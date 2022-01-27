@@ -1,0 +1,2 @@
+# TextTranslator
+ Tradutor de texto
