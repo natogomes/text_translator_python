@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+from dados import *
 
 
 def tela_ini():
@@ -6,12 +7,12 @@ def tela_ini():
 
     entrada = [
         [sg.Text('Idioma de entrada:', font='arial 13', pad=(0, 0))],
-        [sg.InputCombo(('Portuguese', 'English', 'Spanish', 'Italian', 'French', 'German'), font='arial 13', size=(20, 1),
+        [sg.InputCombo(idiomas, font='arial 13', size=(20, 1),
                        pad=(0, (0, 15)), key='entrada')],
     ]
     saida = [
         [sg.Text('Idioma de saída:', font='arial 13', pad=(0, 0))],
-        [sg.InputCombo(('Portuguese', 'English', 'Spanish', 'Italian', 'French', 'German'), font='arial 13', size=(20, 1),
+        [sg.InputCombo(idiomas, font='arial 13', size=(20, 1),
                        pad=(0, (0, 15)), key='saida')],
     ]
 
