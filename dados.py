@@ -1,3 +1,3 @@
-idiomas = ['Português', 'Inglês', 'Espanhol', 'Italiano', 'Francês', 'Alemão']
+idiomas = ['Português', 'Inglês', 'Espanhol', 'Italiano', 'Francês', 'Alemão', 'Japonês']
 
-languages = ['Portuguese', 'English', 'Spanish', 'Italian', 'French', 'German']
+languages = ['Portuguese', 'English', 'Spanish', 'Italian', 'French', 'German', 'Japanese']

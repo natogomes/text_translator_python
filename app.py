@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from telas import *
+from interface_grafica import *
 from funcao import *
 
 tela_ini()
