@@ -1,5 +1,7 @@
+import PySimpleGUI as sg
 from translate import Translator
 from dados import *
+
 # pip install translate
 
 
@@ -18,5 +20,10 @@ def traducao(entrada, saida, texto):
     entrada = languages[ent]
     saida = languages[sai]
     translator = Translator(from_lang=entrada, to_lang=saida)
-    result = translator.translate(texto)
-    print(result)
+    try:
+        result = translator.translate(texto)
+    except OSError:
+        sg.Popup('Verifique sua conexão com a internet.',
+                 font='arial 12', title='ERRO')
+    else:
+        print(result)
